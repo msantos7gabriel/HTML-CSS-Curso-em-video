@@ -1,0 +1,57 @@
+Harmonia de cores
+
+-Circulo Cromático:
+
+1. Cores Primarias - Amarelo, Vermelho, Azul
+2. Cores Secundárias - Verde (Amarelo + Azul), Magenta|Roxo (Vermelho + Azul), Laranja (Amarelo + Vermelho)
+3. Cores terciarias - Cores Primarias + Secundárias (Nomeclaruta: Nome da cor primaria depois cor Secundárias)
+
+-Temperatura e Harmonia: 
+
+Olhando o círculo cromático, também conseguimos classificar as cores por sua temperatura.
+As cores quentes, criam uma sensação de calor e proximidade. Já as cores frias, estão associadas a sensações mais calmas, de frescor e tranquilidade.
+Além da classificação por temperatura, podemos classificar as cores por esquemas harmônicos.
+
+-Cores Complementares:
+
+São aquelas que apresentam o maior contraste entre si. Elas
+estão localizadas do lado imediatamente oposto do círculo
+cromático.
+
+-Cores Análogas:
+
+cores análogas são aquelas que são imediatamente vizinhas entre si.
+Por serem cores consecutivas, as cores análogas possuem um baixo contraste entre elas, mas criam uma bela harmonia quando combinadas em um mesmo design.
+
+
+-Cores análogas mais uma complementar:
+
+Essa técnica quebra um pouco o ritmo semelhante das cores análogas, adicionando uma cor que cria um grande contrastecom as três análogas.
+
+-Cores análogas relacionadas:
+Nesse tipo de harmonia, escolhemos duas cores análogas (consecutivas) e depois pulamos uma terceira cor (em qualquer direção) e escolhemos a quarta. Com essa técnica, conseguimos um resultado parecido com o das cores análogas simples, mas com um pouco mais de contraste sem ter que escolher uma cor complementar.
+
+-Cores intercaladas:
+
+Um tipo menos usado de harmonia, já que às vezes não funciona tão bem assim. Vamos escolher a primeira cor e depois mais duas com intervalo constante entre elas.
+Na imagem ao lado, criei um exemplo onde o intervalo é constante entre as cores selecionados.
+
+-Cores triádicas:
+
+Técnica bastante utilizada e que garante uma grande riqueza de cores, onde escolhemos três pontos equidistantes no círculo cromático.
+Esse esquema gera sempre um triângulo equilátero e cria uma opção que sempre possui um ótimo contraste entre as cores.
+
+-Cores em quadrado:
+Bastante semelhante ao esquema triádico, mas permite selecionar quatro cores com um contraste razoável entre as cores escolhidas.
+Esse esquema gera sempre um quadrado perfeito com os pontos selecionados.
+
+-Cores tetrádicas:
+
+Com essa técnica, vamos escolher dois pares de cores complementares, que não serão necessariamente análogas ou consecutivas.
+Isso vai nos garantir dois pares de cores, com bastante contraste entre si.
+
+-Monocromia:
+
+Uma harmonia bem diferente das anteriores, que usa apenas uma cor e varia apenas a sua saturação e o seu brilho. 
+Essa combinação geralmente gera pouquíssimo contraste entre as cores escolhidas, mas acaba gerando um resultado visual bem agradável aos olhos, conhecido como “degradê”.
+
