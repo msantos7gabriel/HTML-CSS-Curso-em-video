@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+/*Footer*/
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #84e1ad;
+  margin: 0;
+}
+
+div {
+  height: 200px;
+  background-image: linear-gradient(#3dda84, #1c623b);
+  color: white;
+  text-align: center;
+  box-shadow: 1px 5px 6px rgb(0, 0, 0, 0.25);
+}
+div > h1 {
+  margin: 0px;
+  font-size: 2em;
+  font-weight: bold;
+  padding: 20px;
+}
+div > p {
+  font-size: 1.2em;
+}
+div > nav {
+  text-align: left;
+  margin-top: 50px;
+}
+div > nav > a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #3dda8c;
+  padding: 10px;
+}
+div > nav > a:hover {
+  background-color: #1d9057;
+  border-radius: 5px;
+  color: #1c623b;
+}
+
+/*Main*/
+
+main {
+  background-color: #fff;
+  margin: 0 50px;
+}
+    
