@@ -60,7 +60,7 @@ main > section > article > h1 {
   font-size: 2em;
   margin: 0px;
 }
-main > section > article > h2 {
+.h2 {
   font-family: "idroid", sans-serif;
   color: #1b5d3a;
   margin: 0px;
@@ -73,23 +73,40 @@ main > section > article > p {
   text-align: justify;
   line-height: 1.5;
 }
-main > section > article > p > a {
+.links {
   text-decoration: none;
   padding: 0 5px 0 5px;
   color: #1a5a37;
   font-weight: bold;
 }
 
-main > section > article > p > a:hover {
+.links:hover {
   color: white;
   background-color: #1a5a37;
 }
-main > section > article > p > a::after {
+.links::after {
   content: "🔗";
   padding-left: 5px;
 }
 
+.sombra {
+  color: #1a5a37;
+  font-weight: bold;
+  text-shadow: 1px 1px 5px rgb(0, 0, 0, 0.5);
+}
 
+/*Olha isso aki dps*/
+img {
+  margin: auto;
+}
+
+/*Video*/
+
+.video {
+  background-color: #1a5a37;
+  margin: 0 100px;
+  padding: 10px;
+}
 
 /*Comentarios para Mim do Futuro:
 
