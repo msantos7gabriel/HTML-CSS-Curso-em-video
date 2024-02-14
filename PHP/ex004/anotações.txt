@@ -1,0 +1,17 @@
+Tipos de Strings em PHP 
+
+Double quouted ou aspas duplas - "" (Existe interpretação do conteudo, interpretar, analizar)
+ex: "php \u{1f418}"
+ output: php (Emoji)
+
+Single Quoted ou Aspas Simples - '' (Não existe interpretação do conteúdo, mostrar como está)
+Ex: 'php \u{1f418}' 
+output: php \u{1f418}
+
+Nowdoc
+Heredoc
+
+Strings:
+
+operador de concatenação = . (Juntar as duas Strings)/(Serve tanto para Double quouted quanto para single quouted)
+
