@@ -24,4 +24,7 @@ sin(),cos(),tan()
 
 sqrt() raiz quadrada // não é possivel tirar raiz cubica alternativa: 27 ** (1/3)
 
-rand(int $min, int $max): int // escolhe um numero aleatorio entro os numeros maximos e minimos
+rand(int $min, int $max): int // escolhe um numero aleatorio entro os numeros maximos e minimos // 1951 - Linear Congrentional Generator
+mt_rand() verção mais nova e rapida // 1991 - Mersenne Twister
+random_int() gera números aleatorios criptograficamente seguros - mais lento
+ 

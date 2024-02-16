@@ -17,9 +17,7 @@
 
         echo "Seus R\$ $reais equivalem a <strong>US\$ $dolar</strong>";
         echo "<br><strong>*Cotação Fixa de US$ 4,97</strong>, informado diretamente no código";
-
         ?>
-
         <p><a href="javascript:history.go(-1)"> Voltar Para a Página Anterior</a></p>
     </section>
 
