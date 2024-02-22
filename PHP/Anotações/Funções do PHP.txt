@@ -1,3 +1,5 @@
+FUNÇÕES ARITIMETICAS:
+
 Função ABS() mostra o valor absoluto de um valor
 
 Base_convert (valor, base_de_saida, base_desejada) Converte um número decimal para outra base num
@@ -27,4 +29,16 @@ sqrt() raiz quadrada // não é possivel tirar raiz cubica alternativa: 27 ** (1
 rand(int $min, int $max): int // escolhe um numero aleatorio entro os numeros maximos e minimos // 1951 - Linear Congrentional Generator
 mt_rand() verção mais nova e rapida // 1991 - Mersenne Twister
 random_int() gera números aleatorios criptograficamente seguros - mais lento
+
+FUNÇÕES DE FORMATAÇÃO:
+
+number_format($variavel, Quantidade de casas apos a virgula,"Separador de decimal","Separador de Milhar)
+
+
+Obs: Internacionalização monetaria (n funcionou no meu pc, mas no phpsandbox foi)
+dentro da biblioteca intl (internalization PHP); // vem desativada por padrão no php.ini
+
+$variavel = numfmt_create("lingua_Pais", NumberFormatter::CURRENCY);
+echo "". numfmt_format_currency($variavel, $preco , "BRL(sigla da moeda)") . "";
+
  

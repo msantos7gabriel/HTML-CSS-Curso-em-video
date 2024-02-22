@@ -12,13 +12,16 @@
     <section>
         <h1>Conversor de Moedas v1.0</h1>
         <?php
+
         $reais = $_GET["reais"];
         $dolar = round($reais / 4.97, 2);
+        $padrao = numfmt_create("pt_BR", NumberFormatter::CURRENCY);
 
-        echo "Seus R\$ $reais equivalem a <strong>US\$ $dolar</strong>";
-        echo "<br><strong>*Cotação Fixa de US$ 4,97</strong>, informado diretamente no código";
+        echo "Seus " . numfmt_format_currency($padrao, $reais, "BRL") . " equivalem a <strong>" . numfmt_format_currency($padrao, $dolar, "USD") . "</strong>";
+        echo "<br><strong>*Cotação Fixa de US$ 4,97</strong>, informado diretamente no código <br>";
         ?>
-        <p><a href="javascript:history.go(-1)"> Voltar Para a Página Anterior</a></p>
+        <br>
+        <button onclick="javascript:history.go(-1)">Voltar</button>
     </section>
 
 </body>
