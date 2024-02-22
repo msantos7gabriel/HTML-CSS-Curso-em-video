@@ -18,10 +18,6 @@
         $nome = $_GET["nome"] ?? "Sem Nome"; //se não tiver o GET ele vai ser Desconhecido (?? = operador de qualicencia nula)
         $snome = $_GET["sobrenome"] ?? "Desconhecido";
         echo "<p> É um grande Prazer te conhecer, <strong> $nome $snome!</strong> Este é o meu site!</p>";
-
-
-
-
         ?>
         <p><a href="javascript:history.go(-1)"> Voltar Para a Página Anterior</a></p>
     </main>

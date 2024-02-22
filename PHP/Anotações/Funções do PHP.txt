@@ -41,4 +41,24 @@ dentro da biblioteca intl (internalization PHP); // vem desativada por padrão n
 $variavel = numfmt_create("lingua_Pais", NumberFormatter::CURRENCY);
 echo "". numfmt_format_currency($variavel, $preco , "BRL(sigla da moeda)") . "";
 
- 
+
+Outras funções:
+
+Json_decode(file_get_contents($url),True/False);
+obs:$variavel que está com o link da api// True = Fica dentro de um array | False = Fica dentro de um objeto;
+
+ex:
+        $url = 'https://olinda.bcb.gov.br/olinda/servico/PTAX/versao/v1/odata/CotacaoDolarPeriodo(dataInicial=@dataInicial,dataFinalCotacao=@dataFinalCotacao)?@dataInicial=\'02-15-2024\'&@dataFinalCotacao=\'02-22-2024\'&$top=1&$orderby=dataHoraCotacao%20desc&$format=json&$select=cotacaoCompra,dataHoraCotacao';
+
+        $dados = json_decode(file_get_contents($url), true);
+        var_dump($dados);
+        $cotação = $dados["value"][0]["cotacaoCompra"];
+
+
+
+date();
+    date_default_timezone_set("America/Sao_Paulo");  //Definindo o fuso horário padrão de são pauso
+    echo "Hoje é dia" . date("D/M/Y"); // Mostra a data atual do sistema ( D,d/M,m/Y,y) variam.
+    echo "\t E a hora atual é " . date("G:i:s T"); // G = 24 g = 12 o resto eu n entendi T= mosta a timezone
+    $inicio = date("m-d-Y", strtotime("-7 days")); // String to time é ultilizado para usar uma data de referencia e subitrair ou aumentar dela
+

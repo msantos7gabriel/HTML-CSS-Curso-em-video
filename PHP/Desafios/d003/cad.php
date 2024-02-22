@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <section>
+    <main>
         <h1>Conversor de Moedas v1.0</h1>
         <?php
 
@@ -22,7 +22,7 @@
         ?>
         <br>
         <button onclick="javascript:history.go(-1)">Voltar</button>
-    </section>
+    </main>
 
 </body>
 
