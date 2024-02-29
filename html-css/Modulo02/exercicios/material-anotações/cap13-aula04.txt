@@ -1,5 +1,0 @@
-Gerador de paletas
-
-- Adobe Color
-- Paletton
-- Coolors
