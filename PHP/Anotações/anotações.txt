@@ -36,4 +36,6 @@ $_SEVER
 $GLOBALS    Variavel global que aponta para todos os arrays globais (Custa muitos recursos)
 
 
+teste
+
 
