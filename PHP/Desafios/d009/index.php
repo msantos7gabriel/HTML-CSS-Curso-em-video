@@ -22,11 +22,11 @@
             <label for="v1">1° Valor</label>
             <input type="number" name="v1" id="v1" required value="<?= $valor1 ?>">
             <label for="p1">1° peso</label>
-            <input type="number" name="p1" id="p1" required value="<?= $peso1 ?>">
+            <input type="number" name="p1" id="p1" required min="1" value="<?= $peso1 ?>">
             <label for="v2">2° Valor</label>
             <input type="number" name="v2" id="v2" required value="<?= $valor2 ?>">
             <label for="p2">2° peso</label>
-            <input type="number" name="p2" id="p2" required value="<?= $peso2 ?>">
+            <input type="number" name="p2" id="p2" required min="1" value="<?= $peso2 ?>">
             <input type="submit" value="Calcular Médias">
         </form>
     </main>

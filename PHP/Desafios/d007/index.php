@@ -11,8 +11,9 @@
 <body>
     <?php
     $padrao = numfmt_create("pt_BR", NumberFormatter::CURRENCY);
-    $salario = $_GET['salario'] ?? 1380;
-    const SALARIO_MIN = 1380;
+    const SALARIO_MIN = 1380.60;
+    $salario = $_GET['salario'] ?? SALARIO_MIN;
+
 
     ?>
     <main>

@@ -12,7 +12,7 @@
     <?php
     // CAPTURANDO OS DADOS DO FORMULARIO RETROALIMENTADO  
     $valor1 = $_GET['v1'] ?? 0;
-    $valor2 = $_GET['v2'] ?? 0;
+    $valor2 = $_GET['v2'] ?? 1;
 
     ?>
     <main>
@@ -30,19 +30,18 @@
         $resultado = $valor1 / $valor2;
         $resto = $valor1 % $valor2;
 
-        echo "<table>
-        <tr class=\"divisão\">
+        echo "
+        <table class=\"divisao\">
+        <tr>
             <td>$valor1</td>
             <td>$valor2</td>
         </tr>
-        <tr class=\"divisão\">
+        <tr>
             <td>$resto</td>
             <td>$resultado</td>
         </tr>
-    </table>
-";
+    </table>";
         ?>
-
     </section>
 </body>
 
