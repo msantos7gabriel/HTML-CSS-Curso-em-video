@@ -12,8 +12,6 @@
     <?php
     // CAPTURANDO OS DADOS DO FORMULARIO RETROALIMENTADO  
     $tempo = $_GET['tempo'] ?? 0;
-    var_dump($_GET);
-
     ?>
     <main>
         <h1>Calculdora de Tempo</h1>
@@ -26,20 +24,25 @@
     <section id="resultado">
         <h1>Totalizando tudo</h1>
         <?php
-        $segundos = (int) $tempo / 60;
-        $minutos = (int) $segundos / 60;
-        $horas = (int) $minutos / 60;
-        $dias = (int) $hora / 24;
-        $semanas = $dia / 7;
+        // 1 mim = 60 segundos 
+        // 1 hora = 3600 segundos
+        // 1 dia = 86400 segundos
+        // 1 semana = 604800 segundos 
 
+        $semanas =  $tempo / 604800;
+        $dias =  $tempo % 604800 /  86400;
+        $horas = $tempo % 604800 % 86400 / 3600;
+        $minutos = (int) $tempo % 604800 % 86400 % 3600 / 60;
+        $segundos = (int)$tempo % 604800 % 86400 % 3600 % 60;
+        var_dump($segundos);
 
         echo "<p>Analizando que voce digitou,  <strong>" . number_format($tempo, 0, ",", ".") . "</strong> equivalem a um total de:</p>";
         echo "        <ul>
-        <li>" . number_format($semanas, 2, ",", ".") . " Semanas</li>
-        <li>" . number_format($dias, 2, ",", ".") . " Dias</li>
-        <li>" . number_format($horas, 2, ",", ".") . " Horas</li>
-        <li>" . number_format($minutos, 2, ",", ".") . " Minutos</li>
-        <li>" . number_format($segundos, 2, ",", ".") . " Segundos</li>
+        <li>" . floor($semanas) . " Semanas</li>
+        <li>" . floor($dias) . " Dias</li>
+        <li>" . floor($horas) . " Horas</li>
+        <li>" . floor($minutos) . " Minutos</li>
+        <li>" . floor($segundos) . " Segundos</li>
     </ul>";
         ?>
 
