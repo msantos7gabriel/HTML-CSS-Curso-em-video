@@ -51,7 +51,8 @@ header > nav > a:hover {
 
 main {
   background-color: #fff;
-  margin: 0 100px;
+  width: 850px;
+  margin: auto;
   padding: 10px;
 }
 main > section > article > h1 {
@@ -97,6 +98,7 @@ main > section > article > p {
 
 /*Olha isso aki dps*/
 img {
+  display: flex;
   margin: auto;
 }
 
@@ -104,8 +106,38 @@ img {
 
 .video {
   background-color: #1a5a37;
-  margin: 0 100px;
+  width: 870px;
+  margin: auto;
+
+  height: 1fr;
+}
+.video iframe {
+  display: flex;
+  margin: 0 auto;
+  padding: 3% 0;
+  width: 800px;
+  height: 500px;
+}
+
+/* Curiosidades*/
+
+.curiosidades {
+  margin: auto;
+  width: 100%;
+  background-color: rgb(197, 235, 214);
+  border-radius: 10px;
+}
+.curiosidades h3 {
   padding: 10px;
+  color: white;
+  background-color: rgb(47, 168, 102);
+  border-radius: 10px 10px 0 0;
+}
+.curiosidades p {
+  text-indent: 2em;
+  text-align: justify;
+  line-height: 1.5;
+  padding: 0 15px;
 }
 
 /*Comentarios para Mim do Futuro:
