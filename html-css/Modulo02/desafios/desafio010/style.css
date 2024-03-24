@@ -1,153 +1,247 @@
 @charset "UTF-8";
+
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
 @font-face {
-  font-family: "idroid";
-  src: url("fonts/idroid.otf") format(opentype);
-  font-weight: normal;
-  font-style: normal;
+  font-family: "Android";
+  src: url("../fontes/idroid.otf") format("opentype");
 }
 
-/*Footer*/
+:root {
+  --cor0: #89cda5;
+  --cor2: #5cbe7d;
+  --cor3: #1a5a37;
+
+  --fonte-padrao: Arial, Verdana, Helvetica, sans_serif;
+  --fonte-destaque: "Bebas Neue", cursive;
+  --font-android: "Android", cursive;
+
+  --box-shadow-padrao-texto: 2px 2px 5px rgba(0, 0, 0, 0.4);
+
+  --simbolo-link-externo: "\00a0\1F517";
+}
+
+* {
+  font-family: var(--fonte-padrao);
+  margin: 0px;
+  padding: 0px;
+}
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: #89cda5;
-  margin: 0;
+  padding: 1px;
+  margin: 0px;
+  background: var(--cor0);
+}
+
+/* Palavras Grifadas no texto */
+strong {
+  color: var(--cor3);
+  font-weight: bold;
+  text-shadow: var(--box-shadow-padrao-texto);
 }
 
 header {
-  height: 200px;
-  background-image: linear-gradient(#3dda84, #1c623b);
-  color: white;
-  text-align: center;
-  box-shadow: 1px 5px 6px rgb(0, 0, 0, 0.25);
-}
-header > h1 {
+  height: 110px;
   margin: 0px;
-  font-size: 2em;
-  font-weight: bold;
-  padding: 20px;
-  font-family: "Bebas Neue", sans-serif;
-}
-header > p {
-  font-size: 1.2em;
-}
-header > nav {
-  text-align: left;
-  margin-top: 50px;
-}
-header > nav > a {
-  text-decoration: none;
-  font-weight: bold;
-  color: white;
   padding: 10px;
-}
-header > nav > a:hover {
-  background-color: #5cbe7d;
-  border-radius: 5px;
+  background-image: linear-gradient(to bottom, var(--cor2), var(--cor3));
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4);
 }
 
-/*Main*/
+header h1 {
+  color: white;
+  font-size: 2em;
+  font-family: var(--fonte-destaque);
+  padding: 0px;
+  text-align: center;
+  text-shadow: var(--box-shadow-padrao-texto);
+}
+
+header p {
+  color: white;
+  font-size: 1em;
+  padding: 0px;
+  padding-top: 20px;
+  text-align: center;
+  text-shadow: var(--box-shadow-padrao-texto);
+}
+
+nav {
+  background-color: var(--cor3);
+  padding: 10px;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4);
+}
+
+nav > a {
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition-duration: 1s;
+}
+
+nav > a:link,
+nav > a:visited {
+  color: white;
+}
+
+nav > a:hover {
+  background-color: var(--cor2);
+}
 
 main {
-  background-color: #fff;
-  width: 850px;
+  min-width: 300px;
+  max-width: 1000px;
   margin: auto;
-  padding: 10px;
+  margin-bottom: 10px;
 }
-main > section > article > h1 {
-  font-family: "idroid", sans-serif;
-  color: #1b5d3a;
-  font-size: 2em;
-  margin: 0px;
-}
-.h2 {
-  font-family: "idroid", sans-serif;
-  color: #1b5d3a;
-  margin: 0px;
-  padding-left: 10px;
-  background-image: linear-gradient(90deg, #84e1ad, white);
-  border-radius: 10px 0px 0px 10px;
-}
-main > section > article > p {
-  text-indent: 2em;
+
+/* Paragrafos */
+main p {
+  color: black;
   text-align: justify;
-  line-height: 1.5;
+  text-indent: 2em;
+  line-height: 2em;
+  padding-bottom: 20px;
 }
-.links {
+
+main a {
   text-decoration: none;
-  padding: 0 5px 0 5px;
-  color: #1a5a37;
-  font-weight: bold;
+  color: var(--cor3);
+  font-weight: bolder;
+  padding: 2px;
 }
 
-.links:hover {
+main a::after {
+  content: var(--simbolo-link-externo);
+}
+
+main a:hover {
   color: white;
-  background-color: #1a5a37;
-}
-.links::after {
-  content: "🔗";
-  padding-left: 5px;
+  background-color: var(--cor3);
+  padding: 2px;
 }
 
-.sombra {
-  color: #1a5a37;
-  font-weight: bold;
-  text-shadow: 1px 1px 5px rgb(0, 0, 0, 0.5);
+article {
+  background-color: white;
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.4);
+  border-radius: 0px 0px 5px 5px;
+  padding: 20px;
+  padding-bottom: 10px;
 }
 
-/*Olha isso aki dps*/
+/* Tutulos */
+article h1 {
+  color: var(--cor3);
+  font-size: 2em;
+
+  text-align: center;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4);
+
+  font-family: var(--font-android);
+  padding: 20px;
+  margin: 0px;
+}
+
+/* Subtitulos */
+article h2 {
+  color: var(--cor3);
+  background-image: linear-gradient(to right, var(--cor0), transparent);
+
+  font-family: var(--font-android);
+  text-shadow: var(--box-shadow-padrao-texto);
+
+  border-radius: 10px 0px 0px 10px;
+
+  padding: 2px;
+  padding-left: 10px;
+
+  margin: 20px;
+  margin-left: 0px;
+}
+
 img {
-  display: flex;
-  margin: auto;
-}
-
-/*Video*/
-
-.video {
-  background-color: #1a5a37;
-  width: 870px;
-  margin: auto;
-
-  height: 1fr;
-}
-.video iframe {
-  display: flex;
-  margin: 0 auto;
-  padding: 3% 0;
-  width: 800px;
-  height: 500px;
-}
-
-/* Curiosidades*/
-
-.curiosidades {
-  margin: auto;
   width: 100%;
-  background-color: rgb(197, 235, 214);
-  border-radius: 10px;
 }
-.curiosidades h3 {
+
+.pequena {
+  display: block;
+  width: 200px;
+  margin: auto;
+}
+
+.boxVideo {
+  position: relative;
+  background-color: var(--cor3);
+
+  padding-bottom: 56.25%;
+  padding-top: 25px;
+  margin: 0px;
+}
+
+.boxVideo iframe {
+  position: absolute;
+  top: 2.5%;
+  left: 5%;
+  width: 90%;
+  height: 95%;
+}
+
+aside {
+  background-color: #c5ebd6;
+  border-radius: 0px 0px 5px 5px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
   padding: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+aside h3 {
+  border-radius: 5px 5px 0px 0px;
+  background-color: #2fa866;
   color: white;
-  background-color: rgb(47, 168, 102);
-  border-radius: 10px 10px 0 0;
+  font-size: 1em;
+  padding: 10px;
+  margin: -10px -10px 20px -10px;
 }
-.curiosidades p {
-  text-indent: 2em;
+
+aside p {
   text-align: justify;
-  line-height: 1.5;
-  padding: 0 15px;
+  text-indent: 1em;
 }
 
-/*Comentarios para Mim do Futuro:
+aside > ul {
+  list-style-type: "\2714\00a0\00a0"; /*No-Break Space (NBSP) \00a0*/
+  list-style-position: inside;
+  columns: 2;
+  padding: 30px;
+}
 
-Ajeita o Header sa porra ta errada.
+/* Rodapé */
+footer > p {
+  background-color: var(--cor3);
+  color: white;
+  text-align: center;
+  font-size: 0.8em;
+  padding: 5px;
+  margin-bottom: 0px;
+}
 
--nav bar ta fora de lugar
--titulo ta estranho e margin ta mt
+footer a {
+  font-weight: bold;
+  color: white;
+  text-shadow: var(--box-shadow-padrao-texto);
+  text-decoration: none;
+  padding: 2px;
+}
 
-Site em referencia: www.notte.com.br/
+footer a:hover {
+  color: black;
+  background-color: white;
+  padding: 2px;
+}
 
-observação: ele fez com responsividade o main (eu ainda não sei fazer isso ai não te vira)
-*/
+footer a::after {
+  content: var(--simbolo-link-externo);
+}
