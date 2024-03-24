@@ -4,7 +4,7 @@
 
 @font-face {
   font-family: "Android";
-  src: url("../fontes/idroid.otf") format("opentype");
+  src: url("fonts/idroid.otf") format("opentype");
 }
 
 :root {
@@ -78,7 +78,7 @@ nav > a {
   text-decoration: none;
   font-weight: bold;
   border-radius: 5px;
-  transition-duration: 1s;
+  transition-duration: 0.75s; /* (transition de cor) */
 }
 
 nav > a:link,
@@ -212,8 +212,8 @@ aside p {
 }
 
 aside > ul {
-  list-style-type: "\2714\00a0\00a0"; /*No-Break Space (NBSP) \00a0*/
-  list-style-position: inside;
+  list-style-type: "\2714\00a0\00a0"; /*No-Break Space (NBSP) \00a0  https://developer.mozilla.org/en-US/docs/Web/CSS/list-style-position*/
+  list-style-position: inside; /* https://developer.mozilla.org/en-US/docs/Web/CSS/list-style-type */
   columns: 2;
   padding: 30px;
 }
